@@ -44,6 +44,40 @@ public class Tree {
         return false;
     }
 
+    public void traversePreOrder(){
+        traversePreOrder(root);
+
+    }
+    public void traverseInOrder(){
+        traverseInOrder(root);
+    }
+
+    private void traversePreOrder(Node root){
+        if(root==null){
+            return;
+        }
+        System.out.print(root.value + " ");
+        traversePreOrder(root.leftChild);
+        traversePreOrder(root.rightChild);
+    }
+    private void traverseInOrder(Node root){
+        if(root==null){
+            return;
+        }
+        traverseInOrder(root.leftChild);
+        System.out.print(root.value + " ");
+        traverseInOrder(root.rightChild);
+
+    }
+
+    private void traversePostOrder(Node root){
+        if(root==null){
+            return;
+        }
+        traversePostOrder(root.rightChild);
+        traversePostOrder(root.leftChild);
+    }
+
     private class Node{
         private int value;
         private Node leftChild;
