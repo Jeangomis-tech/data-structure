@@ -158,6 +158,16 @@ public class Tree {
 
     }
 
+    //PARCOURIR L'ARBRE EN LARGEUR.
+//    J'utiles les methodes que j'ai créé aux préalables
+
+    public void traverseLevelOrder(){
+        for(int i = 0; i< height(); i++){
+            var list  = getNodesAtDistance(i);
+            System.out.println(list);
+        }
+    }
+
 
 
     private class Node{

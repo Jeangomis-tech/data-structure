@@ -93,6 +93,7 @@ public class Main {
 //        tree.traversePostOrder();
 
 //        System.out.println("Height : " + tree.height());
+        tree.traverseLevelOrder();
 
 
 
