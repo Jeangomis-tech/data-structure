@@ -71,11 +71,29 @@ public class Main {
         tree.insert(6);
         tree.insert(8);
         tree.insert(10);
+        tree.insert(1);
+
+        Tree tree1 = new Tree();
+        tree1.insert(7);
+        tree1.insert(5);
+        tree1.insert(9);
+        tree1.insert(2);
+        tree1.insert(6);
+        tree1.insert(8);
+        tree1.insert(10);
+        tree1.insert(1);
+        System.out.println(tree.equals(tree1));
+//        tree.printNodesAtDistance(0);
+        System.out.println(tree.getNodesAtDistance(2));
 
 //        System.out.println(tree.contains(5));
 //        System.out.println(tree.contains(12));
 //        System.out.println(factoriel(4));
-        tree.traverseInOrder();
+//        tree.traverseInOrder();
+//        tree.traversePostOrder();
+
+//        System.out.println("Height : " + tree.height());
+
 
 
         // 4*3*2
