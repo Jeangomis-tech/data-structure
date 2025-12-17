@@ -45,23 +45,36 @@ public class Main {
 //        int x =   q.peek();
 //        System.out.println(x);
 
-        ArrayQueue arrayQueue = new ArrayQueue(5);
-        arrayQueue.enqueue(1);
-        arrayQueue.enqueue(2);
-        arrayQueue.enqueue(3);
+//        ArrayQueue arrayQueue = new ArrayQueue(5);
+//        arrayQueue.enqueue(1);
+//        arrayQueue.enqueue(2);
+//        arrayQueue.enqueue(3);
 
-        System.out.println(arrayQueue);
-        System.out.println(arrayQueue.dequeue());
-        System.out.println(arrayQueue);
-        arrayQueue.enqueue(4);
-        arrayQueue.enqueue(5);
-        System.out.println(arrayQueue);
-        arrayQueue.enqueue(6);
-        System.out.println(arrayQueue);
-        System.out.println(arrayQueue.dequeue());
-        arrayQueue.enqueue(7);
-        System.out.println(arrayQueue);
-        System.out.println(arrayQueue.peek());
+//        System.out.println(arrayQueue);
+//        System.out.println(arrayQueue.dequeue());
+//        System.out.println(arrayQueue);
+//        arrayQueue.enqueue(4);
+//        arrayQueue.enqueue(5);
+//        System.out.println(arrayQueue);
+//        arrayQueue.enqueue(6);
+//        System.out.println(arrayQueue);
+//        System.out.println(arrayQueue.dequeue());
+//        arrayQueue.enqueue(7);
+//        System.out.println(arrayQueue);
+//        System.out.println(arrayQueue.peek());
+
+        Tree tree = new Tree();
+        tree.insert(6);
+        tree.insert(4);
+        tree.insert(8);
+        tree.insert(1);
+        tree.insert(5);
+        tree.insert(7);
+        tree.insert(9);
+        tree.insert(3);
+        tree.insert(10);
+        System.out.println(tree.contains(5));
+        System.out.println(tree.contains(12));
 
 
 
