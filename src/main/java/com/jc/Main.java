@@ -63,22 +63,29 @@ public class Main {
 //        System.out.println(arrayQueue);
 //        System.out.println(arrayQueue.peek());
 
-        Tree tree = new Tree();
-        tree.insert(6);
-        tree.insert(4);
-        tree.insert(8);
-        tree.insert(1);
-        tree.insert(5);
-        tree.insert(7);
-        tree.insert(9);
-        tree.insert(3);
-        tree.insert(10);
-        System.out.println(tree.contains(5));
-        System.out.println(tree.contains(12));
+//        Tree tree = new Tree();
+//        tree.insert(6);
+//        tree.insert(4);
+//        tree.insert(8);
+//        tree.insert(1);
+//        tree.insert(5);
+//        tree.insert(7);
+//        tree.insert(9);
+//        tree.insert(3);
+//        tree.insert(10);
+//        System.out.println(tree.contains(5));
+//        System.out.println(tree.contains(12));
+        System.out.println(factoriel(4));
+        // 4*3*2
 
 
 
 
+    }
 
+    public static int factoriel(int n){
+        if(n == 0) return 1;
+
+        return n * factoriel(n-1);
     }
 }
