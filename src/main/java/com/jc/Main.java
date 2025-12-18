@@ -101,7 +101,9 @@ public class Main {
 //        SortingAlgorithms.selectionSort(arr);
 //        SortingAlgorithms.insertionSort(arr);
 //        SortingAlgorithms.mergeSort(arr);
-        SortingAlgorithms.quickSort(arr,0,4);
+//        SortingAlgorithms.quickSort(arr,0,4);
+        var index = SearchAlgorithms.linearSearch(arr,8);
+        System.out.println(index);
 //       SortingAlgorithms.bubbleSort(arr);
 
         // 4*3*2
