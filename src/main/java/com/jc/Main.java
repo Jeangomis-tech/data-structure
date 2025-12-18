@@ -99,7 +99,8 @@ public class Main {
         System.out.println(Arrays.toString(arr));
 //        SortingAlgorithms.bubbleSort(arr);
 //        SortingAlgorithms.selectionSort(arr);
-        SortingAlgorithms.insertionSort(arr);
+//        SortingAlgorithms.insertionSort(arr);
+        SortingAlgorithms.mergeSort(arr);
 //       SortingAlgorithms.bubbleSort(arr);
 
         // 4*3*2

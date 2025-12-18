@@ -48,6 +48,52 @@ public class SortingAlgorithms {
         }
         System.out.println(Arrays.toString(arr));
     }
+    //Tri par fusion
+    public static void mergeSort(int[] arr){
+
+        if(arr.length < 2) return;
+        //diviser
+        var middle = arr.length/2;
+
+        var left = new int[middle];
+        for(int i = 0; i< middle; i++){
+            left[i] = arr[i];
+        }
+        var right = new int[arr.length-middle];
+        for(int i = middle; i< arr.length; i++){
+            right[i-middle] = arr[i];
+        }
+        // Trier
+        mergeSort(left);
+        mergeSort(right);
+
+        //Fusion
+        merge(left,right,arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+
+
+    private static void merge(int[] left,int[] right, int[] result){
+        int leftIndex =0;
+        int rightIndex =0;
+        int resultIndex =0;
+        while(leftIndex < left.length && rightIndex < right.length){
+            if(left[leftIndex] <= right[rightIndex]){
+                result[resultIndex++] = left[leftIndex++];
+            }else {
+                result[resultIndex++] = right[rightIndex++];
+            }
+        }
+        while(leftIndex < left.length){
+            result[resultIndex++] = left[leftIndex++];
+        }
+        while(rightIndex < right.length){
+            result[resultIndex++] = right[rightIndex++];
+        }
+
+    }
 
     //Methode extraite
     private static void swap(int[] arr, int index1, int index2){
