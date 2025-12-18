@@ -98,7 +98,8 @@ public class Main {
         int[] arr = {2,8,4,1,3};
         System.out.println(Arrays.toString(arr));
 //        SortingAlgorithms.bubbleSort(arr);
-        SortingAlgorithms.selectionSort(arr);
+//        SortingAlgorithms.selectionSort(arr);
+        SortingAlgorithms.insertionSort(arr);
 //       SortingAlgorithms.bubbleSort(arr);
 
         // 4*3*2
