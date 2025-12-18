@@ -56,13 +56,9 @@ public class SortingAlgorithms {
         var middle = arr.length/2;
 
         var left = new int[middle];
-        for(int i = 0; i< middle; i++){
-            left[i] = arr[i];
-        }
+        System.arraycopy(arr, 0, left, 0, middle);
         var right = new int[arr.length-middle];
-        for(int i = middle; i< arr.length; i++){
-            right[i-middle] = arr[i];
-        }
+        if (arr.length - middle >= 0) System.arraycopy(arr, middle, right, middle - middle, arr.length - middle);
         // Trier
         mergeSort(left);
         mergeSort(right);
@@ -72,8 +68,30 @@ public class SortingAlgorithms {
 
         System.out.println(Arrays.toString(arr));
     }
+//Tri rapide
+    public static void quickSort(int[] arr, int start, int end){
 
+        if(start >= end) return;
+       //partition
+        var limit = partition(arr,start,end);
+        //trier à gauche
+        quickSort(arr,start,limit-1);
+        //trier à droite
+        quickSort(arr,limit+1,end);
+//        System.out.println(Arrays.toString(arr));
+    }
 
+    private static int partition(int[] arr, int start, int end){
+        var pivot = arr[end];
+        var limit = start-1;
+        for(int i =start; i<= end; i++){
+            if(arr[i] <= pivot){
+                swap(arr,i, ++limit);
+            }
+        }
+        return limit;
+
+    }
 
     private static void merge(int[] left,int[] right, int[] result){
         int leftIndex =0;

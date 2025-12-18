@@ -100,7 +100,8 @@ public class Main {
 //        SortingAlgorithms.bubbleSort(arr);
 //        SortingAlgorithms.selectionSort(arr);
 //        SortingAlgorithms.insertionSort(arr);
-        SortingAlgorithms.mergeSort(arr);
+//        SortingAlgorithms.mergeSort(arr);
+        SortingAlgorithms.quickSort(arr,0,4);
 //       SortingAlgorithms.bubbleSort(arr);
 
         // 4*3*2
