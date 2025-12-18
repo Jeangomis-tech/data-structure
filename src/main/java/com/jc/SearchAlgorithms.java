@@ -52,4 +52,16 @@ public class SearchAlgorithms {
         }
     }
 
+    //RECHERCHE EXPONENTIELLE
+    public  static int exponentialSearch(int[] arr, int target) {
+       int limit =1;
+       while(limit<arr.length && arr[limit] < target){
+            limit *=2;
+       }
+       int left = limit/2;
+
+       int right = Math.min(limit, arr.length-1);
+       return recursiveSearch(arr,target,left,right);
+    }
+
 }
