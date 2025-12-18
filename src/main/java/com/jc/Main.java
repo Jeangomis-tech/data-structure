@@ -95,16 +95,20 @@ public class Main {
 //        System.out.println("Height : " + tree.height());
 //        tree.traverseLevelOrder();
 
-        int[] arr = {2,8,4,1,3};
-        System.out.println(Arrays.toString(arr));
+//        int[] arr = {2,8,4,1,3};
+//        System.out.println(Arrays.toString(arr));
 //        SortingAlgorithms.bubbleSort(arr);
 //        SortingAlgorithms.selectionSort(arr);
 //        SortingAlgorithms.insertionSort(arr);
 //        SortingAlgorithms.mergeSort(arr);
 //        SortingAlgorithms.quickSort(arr,0,4);
-        var index = SearchAlgorithms.linearSearch(arr,8);
-        System.out.println(index);
+//        var index = SearchAlgorithms.linearSearch(arr,8);
+//        System.out.println(index);
 //       SortingAlgorithms.bubbleSort(arr);
+
+        int[] myArr = {1,2,3,4,8};
+       int index = SearchAlgorithms.binarySearch(myArr,40);
+        System.out.println(index);
 
         // 4*3*2
 
