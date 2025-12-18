@@ -31,4 +31,25 @@ public class SearchAlgorithms {
 
         return -1;
     }
+
+    //RECHERCHE RECURSIVE
+    public static int recursiveSearch(int[] arr, int target) {
+       return recursiveSearch(arr,target,0,arr.length-1);
+    }
+
+    private static  int recursiveSearch(int[] arr,int target, int left, int right){
+        if(left > right){
+            return -1;
+        }
+        var middle = (left + right) / 2;
+        if(arr[middle] == target){
+            return middle;
+        }
+        if(target< arr[middle]){
+            return recursiveSearch(arr,target,left,middle-1);
+        }else{
+            return recursiveSearch(arr,target,middle+1,right);
+        }
+    }
+
 }

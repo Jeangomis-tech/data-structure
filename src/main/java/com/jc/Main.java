@@ -107,7 +107,7 @@ public class Main {
 //       SortingAlgorithms.bubbleSort(arr);
 
         int[] myArr = {1,2,3,4,8};
-       int index = SearchAlgorithms.binarySearch(myArr,40);
+       int index = SearchAlgorithms.recursiveSearch(myArr,1);
         System.out.println(index);
 
         // 4*3*2
