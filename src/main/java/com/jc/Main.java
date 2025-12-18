@@ -82,9 +82,9 @@ public class Main {
         tree1.insert(8);
         tree1.insert(10);
         tree1.insert(1);
-        System.out.println(tree.equals(tree1));
-//        tree.printNodesAtDistance(0);
-        System.out.println(tree.getNodesAtDistance(2));
+//        System.out.println(tree.equals(tree1));
+////        tree.printNodesAtDistance(0);
+//        System.out.println(tree.getNodesAtDistance(2));
 
 //        System.out.println(tree.contains(5));
 //        System.out.println(tree.contains(12));
@@ -93,20 +93,22 @@ public class Main {
 //        tree.traversePostOrder();
 
 //        System.out.println("Height : " + tree.height());
-        tree.traverseLevelOrder();
+//        tree.traverseLevelOrder();
 
-
+        int[] arr = {2,8,4,1,3};
+        System.out.println(Arrays.toString(arr));
+        SortingAlgorithms.bubbleSort(arr);
+//       SortingAlgorithms.bubbleSort(arr);
 
         // 4*3*2
 
 
 
-
     }
 
-    public static int factoriel(int n){
-        if(n == 0) return 1;
-
-        return n * factoriel(n-1);
-    }
+//    public static int factoriel(int n){
+//        if(n == 0) return 1;
+//
+//        return n * factoriel(n-1);
+//    }
 }
