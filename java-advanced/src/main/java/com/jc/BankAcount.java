@@ -10,9 +10,10 @@ public class BankAcount {
 //
 //    }
     //Versement
-    public void deposit(double amount) throws IOException {
+    public void deposit(double amount) throws InvalidAmountException{
         if(amount <=0) {
-            throw new IOException();
+            throw new InvalidAmountException();
+
             //            throw new IllegalArgumentException("Amount must be greater than 0.");
         }
         balance += amount;

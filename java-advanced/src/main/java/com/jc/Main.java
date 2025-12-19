@@ -21,7 +21,7 @@ public class Main {
 //        System.out.println( quiz());
         try {
             MyBankApplication.start();
-        } catch (IOException e) {
+        } catch (InvalidAmountException e) {
             throw new RuntimeException(e);
         }
 
