@@ -30,6 +30,16 @@ PROFONDEUR ET HAUTEUR D'UN NOEUD
 
     et pour calculer la hauteur on commence par les feuilles 
 
+JAVA AVANCE 
+ LES EXCEPTIONS :
+
+Il ya trois types d'exceptions 
+CHECKED : Ces ont des exceptions que tout bon développeur se doit d'anticiper , elles sont vérifiées lors de la compilation
+UNCHECKED: Ce sont des exceptions qui peuvent arriver lorsque vous avez des erreurs de programmation Exemple NullPointerException, ArithmeticException, IllegalArgumentException, IndexOutOfBoundException
+
+ERROR: Tout erreur qui se produit de fàcon externe à l'application: Exemple out of memory error, 
+
+
 
 
 
