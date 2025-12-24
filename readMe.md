@@ -55,6 +55,22 @@ Un nombre négatif si this est plus petit que other
 Zéro si les deux sont égaux
 Un nombre positif si this est plus grand que other
 
+wildcard <?> c'est à dire on peut passer n'importe quel type
+Pour éviter qu'elle soit trop permissive on doit lui ajouter une contrainte :
+
+Exemple <? extends BankAccount> pour n'accepter que les les objets de type BankAccount
+
+    UPPER BOUNDED WILDCARD: 
+c'est à dire limiter la classe mére en question mais n'importe classe fille peut y entrer: Exemple <? extends BankAccount>
+
+Prens en considération toute les classe qui vont etendre BankAccount 
+
+    LOWER BOUNDED WILDCARD
+Prends-en consideration toute les classes au dessus(classes mères) de la classe BankAccount
+
+Exemple <? super BankAccount>
+
+
 
 
 

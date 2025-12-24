@@ -12,6 +12,15 @@ public class Main {
 
         Utils.printKeyValue("Nom","GOMIS");
 
+        BankAccount bankAccount = new BankAccount(18);
+
+        Utils.printBankAccount(new SavingsAccount(50));
+        Utils.printBankAccount(new GenericList<SavingsAccount>());
+        Utils.printBankAccount(new GenericList<BankAccount>());
+        Utils.printBankAccount(new GenericList<String>());
+        Utils.printBankAccount(new GenericList<Object>());
+
+
 //        myList.add();
     }
 }

@@ -10,5 +10,11 @@ public class Utils {
     public static <K, V> void  printKeyValue(K key, V value){
         System.out.println(key+ " = "+value);
     }
+    public static void printBankAccount(BankAccount bankAccount){
+        System.out.println(bankAccount);
+    }
+    public static void printBankAccount(GenericList<? extends BankAccount> bankAccounts){
+
+    }
 
 }
