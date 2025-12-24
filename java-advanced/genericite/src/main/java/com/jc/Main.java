@@ -10,6 +10,8 @@ public class Main {
         System.out.println(Utils.min(new BankAccount(18),new BankAccount(89)));
         System.out.println(Utils.min(8,9));
 
+        Utils.printKeyValue("Nom","GOMIS");
+
 //        myList.add();
     }
 }
