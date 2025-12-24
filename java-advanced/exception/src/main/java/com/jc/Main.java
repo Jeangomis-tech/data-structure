@@ -3,6 +3,7 @@ package com.jc;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -19,20 +20,21 @@ public class Main {
 
       ;
 //        System.out.println( quiz());
-        try {
-            MyBankApplication.start();
-        } catch (BankAccountException e) {
-            throw new RuntimeException(e);
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.print("Enter Your Password: ");
+            String password = sc.nextLine();
         }
 
+//        try {
+//            MyBankApplication.start();
+//        } catch (BankAccountException e) {
+//            throw new RuntimeException(e);
+//        }
+
     }
-   static String quiz(){
-        try{
-            return "try";
-        }catch(Exception e){
-            return "catch";
-        }finally{
-            return "finally";
-        }
+    public static void validatePassword(String password) throws Exception {
+
+
     }
 }
